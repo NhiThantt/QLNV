@@ -39,7 +39,7 @@ function themNhanVien() {
     isValid &= validation.checkEmpty(pass, "tbMatKhau", "Mật khẩu không được để trống") && validation.checkPassword(pass, "tbMatKhau", "Mật Khẩu từ 6-10 ký tự (chứa ít nhất 1 ký tự số, 1 ký tự in hoa, 1 ký tự đặc biệt)");
 
     //Ngày làm không để trống, định dạng mm/dd/yyyy
-    isValid &= validation.checkEmpty(date, "tbNgay", "Ngày không được để trống") && validation.checkDate(date, "tbNgay", "");
+    isValid &= validation.checkEmpty(date, "tbNgay", "Ngày không được để trống") && validation.checkDate(date, "tbNgay", "Định dạng ngày mm/dd/yyyy");
 
     //Lương cơ bản 1 000 000 - 20 000 000, không để trống
     isValid &= validation.checkEmpty(salary, "tbLuongCB", "Lương không được để trống") && validation.checkSalary(salary, "tbLuongCB", "Lương từ 1.000.000 - 20.000.000");
